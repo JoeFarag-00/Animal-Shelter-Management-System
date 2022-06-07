@@ -42,24 +42,32 @@
         function ListAllUsers()
         {
             $Myfile = fopen($this->FileManagerObj->getFileName(), "r+") or die("Unable to open file");
-            fgets($Myfile);
+            $Firstrow = 0;
             while (!feof($Myfile))
             {
                 $line = fgets($Myfile);
+
                 if ( empty(trim($line))) 
                 {
                     break;
                 }
+
                 $Arrayline = explode($this->FileManagerObj->getSeparator(), $line);
+
                 echo "<tr>";
-                for ($i = 0; $i < count($Arrayline) - 1; $i++)
+                for ($i = 0; $i < count($Arrayline) - $Firstrow; $i++)
                 {
                     echo "<td>" . $Arrayline[$i] . "</td>";
                 }
-                $RoleObj = new RolesType();
-                $RoleType = $RoleObj->GetRoleType(trim($Arrayline[count($Arrayline) - 1]));
-                echo "<td>" . $RoleType . "</td>"."<td><input type = checkbox name = SelectedRows[] value =".$Arrayline[0]."></td>"."<td><a href = ../CRUD/UpdateEmployeeProfile.php?Id=".$Arrayline[0].">Update</a></td>";
+
+                if($Firstrow == 1)
+                {
+                    $RoleObj = new RolesType();
+                    $RoleType = $RoleObj->GetRoleType(trim($Arrayline[count($Arrayline) - 1]));
+                    echo "<td>" . $RoleType . "</td>"."<td><input type = checkbox name = SelectedRows[] value =".$Arrayline[0]."></td>"."<td><a href = ../Views/User CRUD/UpdateUser.php?Id=".$Arrayline[0].">Update</a></td>";
+                }
                 echo "</tr>";
+                $Firstrow = 1;
             }
             fclose($Myfile);
         }
