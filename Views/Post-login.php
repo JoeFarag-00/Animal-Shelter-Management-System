@@ -21,7 +21,7 @@
                                             echo "<a class=\"btn btn-primary btn-lg px-4 me-sm-3\" href=Login.php>Login</a>";
                                         }
                                     ?>
-                                    <a class="btn btn-outline-light btn-lg px-4" href="about.php">Learn More</a>
+                                    <a class="btn btn-outline-light btn-lg px-4" href="about.html">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -43,18 +43,18 @@
                                 </div>
                                 <div class="col mb-5 h-100">
                                     <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
-                                    <h2 class="h5">Premium Care</h2>
-                                    <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
+                                    <h2 class="h5">Animal Grooming</h2>
+                                    <p class="mb-0">When your pet gets too dirty and you can’t find the time to handle the messy situation, it’s time to send them to the groomer! For a nail clipping, hair trimming, fun and exciting experience for your pet.</p>
                                 </div>
                                 <div class="col mb-5 mb-md-0 h-100">
                                     <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
-                                    <h2 class="h5">Featured title</h2>
-                                    <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
+                                    <h2 class="h5">Trained Specialists</h2>
+                                    <p class="mb-0">staffed by trained specialists dedicated to the safe recovery of your lost pet. Enroll your pet's microchip with HomeAgain and your contact information will be tied to the microchip's unique ID code. If your pet becomes lost, veterinarians and shelters can use a microchip scanner to find out how to contact you.</p>
                                 </div>
                                 <div class="col h-100">
                                     <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
-                                    <h2 class="h5">Featured title</h2>
-                                    <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
+                                    <h2 class="h5">Rehoming</h2>
+                                    <p class="mb-0">They try in extremely adverse conditions in a country where routine cruelty is the norm-to save dogs and cats struggling to survive. </p>
                                 </div>
                             </div>
                         </div>
@@ -66,13 +66,13 @@
                     <div class="row gx-5 justify-content-center">
                         <div class="col-lg-10 col-xl-7">
                             <div class="text-center">
-                                <div class="fs-4 mb-4 fst-italic">"Working with Start Bootstrap templates has saved me tons of development time when building new projects! Starting with a Bootstrap template just makes things easier!"</div>
+                                <div class="fs-4 mb-4 fst-italic">“I am a huge animal lover. Growing up, my mother and I rescued countless animals – dogs, cats, birds, rabbits, even a turtle. I have been accused of caring more about animals than I do about people.” —</div>
                                 <div class="d-flex align-items-center justify-content-center">
                                     <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
                                     <div class="fw-bold">
                                         Tom Ato
                                         <span class="fw-bold text-primary mx-1">/</span>
-                                        CEO, Pomodoro
+                                        CEO, Yasmine Khaled
                                     </div>
                                 </div>
                             </div>
@@ -87,26 +87,26 @@
                         <div class="col-lg-8 col-xl-6">
                             <div class="text-center">
                                 <h2 class="fw-bolder">From our blog</h2>
-                                <p class="lead fw-normal text-muted mb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque fugit ratione dicta mollitia. Officiis ad.</p>
+                                <p class="lead fw-normal text-muted mb-5">We care about those creatures, do you?</p>
                             </div>
                         </div>
                     </div>
                     <div class="row gx-5">
                         <div class="col-lg-4 mb-5">
                             <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="https://dummyimage.com/600x350/ced4da/6c757d" alt="..." />
+                                <img class="card-img-top" src="../Assets/Dog1.jpg" alt="..." />
                                 <div class="card-body p-4">
-                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div>
-                                    <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">Blog post title</h5></a>
-                                    <p class="card-text mb-0">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">Spark</div>
+                                    <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">Kids Unite !</h5></a>
+                                    <p class="card-text mb-0">Surprise Visit from GPIS! </p>
                                 </div>
                                 <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
                                     <div class="d-flex align-items-end justify-content-between">
                                         <div class="d-flex align-items-center">
-                                            <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
+                                            <img class="rounded-circle me-3" src="../Assets/Boy1.jpg" alt="..." width="40px"/>
                                             <div class="small">
-                                                <div class="fw-bold">Kelly Rowan</div>
-                                                <div class="text-muted">March 12, 2022 &middot; 6 min read</div>
+                                                <div class="fw-bold">Ahmed Adel</div>
+                                                <div class="text-muted">March 12, 2021 &middot;</div>
                                             </div>
                                         </div>
                                     </div>
@@ -115,19 +115,19 @@
                         </div>
                         <div class="col-lg-4 mb-5">
                             <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="https://dummyimage.com/600x350/adb5bd/495057" alt="..." />
+                                <img class="card-img-top" src="../Assets/Dog2.jpg" alt="..." />
                                 <div class="card-body p-4">
                                     <div class="badge bg-primary bg-gradient rounded-pill mb-2">Media</div>
-                                    <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">Another blog post title</h5></a>
-                                    <p class="card-text mb-0">This text is a bit longer to illustrate the adaptive height of each card. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">Lilly Meets Her New Owner</h5></a>
+                                    <p class="card-text mb-0">There are some things we can do to help them settle and feel safe in those first few days. Keep in mind though, that it generally takes about three weeks for a dog or puppy to start to feel 'at home' and to show their true nature. </p>
                                 </div>
                                 <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
                                     <div class="d-flex align-items-end justify-content-between">
                                         <div class="d-flex align-items-center">
-                                            <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
+                                            <img class="rounded-circle me-3" src="../Assets/Boy2.jpg" alt="..." width="40px" />
                                             <div class="small">
-                                                <div class="fw-bold">Josiah Barclay</div>
-                                                <div class="text-muted">March 23, 2022 &middot; 4 min read</div>
+                                                <div class="fw-bold">Emad Khaled</div>
+                                                <div class="text-muted">April 2, 2019 &middot; 4 min read</div>
                                             </div>
                                         </div>
                                     </div>
@@ -136,19 +136,19 @@
                         </div>
                         <div class="col-lg-4 mb-5">
                             <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="https://dummyimage.com/600x350/6c757d/343a40" alt="..." />
+                                <img class="card-img-top" src="../Assets/Dog3.jpg" alt="..." />
                                 <div class="card-body p-4">
                                     <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div>
-                                    <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">The last blog post title is a little bit longer than the others</h5></a>
-                                    <p class="card-text mb-0">Some more quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">Making friends</h5></a>
+                                    <p class="card-text mb-0">Jana feeds her paw friends</p>
                                 </div>
                                 <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
                                     <div class="d-flex align-items-end justify-content-between">
                                         <div class="d-flex align-items-center">
-                                            <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
+                                            <img class="rounded-circle me-3" src="../Assets/boy3.jpg" alt="..." width="40px"/>
                                             <div class="small">
-                                                <div class="fw-bold">Evelyn Martinez</div>
-                                                <div class="text-muted">April 2, 2022 &middot; 10 min read</div>
+                                                <div class="fw-bold">Ahmad Saed</div>
+                                                <div class="text-muted">June 16, 2020 &middot; 10 min read</div>
                                             </div>
                                         </div>
                                     </div>
@@ -165,8 +165,10 @@
                             </div>
                             <div class="ms-xl-4">
                                 <div class="input-group mb-2">
-                                    <input class="form-control" type="text" placeholder="Email address..." aria-label="Email address..." aria-describedby="button-newsletter" />
-                                    <button class="btn btn-outline-light" id="button-newsletter" type="button">Sign up</button>
+                                    <form  action:"https://formcarry.com/s/6VO9i8J2N8m" method="POST" accept-charset="UTF-8">
+                                        <input  class="form-control" type="email" name="email" placeholder="Email address..." aria-label="Email address..." aria-describedby="button-newsletter" />
+                                        <button class="btn btn-outline-light" id="button-newsletter" type="button">Sign up</button>
+                                    </form>
                                 </div>
                                 <div class="small text-white-50">We care about privacy, and will never share your data.</div>
                             </div>
@@ -179,7 +181,7 @@
         <footer class="bg-dark py-4 mt-auto">
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Your Website 2022</div></div>
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; ASU 2022</div></div>
                     <div class="col-auto">
                         <a class="link-light small" href="#!">Privacy</a>
                         <span class="text-white mx-1">&middot;</span>

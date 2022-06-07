@@ -9,13 +9,12 @@
         function __construct()
         {
             $this->FileManagerObj = new FileManager();
-            $this->FileManagerObj->setFileName("../../Database/Users.txt");
+            $this->FileManagerObj->setFileName("../Database/Users.txt");
             $this->FileManagerObj->setSeparator("~#~#");
         }
 
         function Login($ID, $Password)
         {
-            $this->FileManagerObj->setFileName("../Database/Users.txt");
             $Myfile = fopen($this->FileManagerObj->getFileName(), "r+") or die("Unable to open file");
             fgets($Myfile);
             while (!feof($Myfile)) 
@@ -24,25 +23,6 @@
                 $Arrayline = explode($this->FileManagerObj->getSeparator(), $line);
 
                 if($ID == $Arrayline[0] && $Password == $Arrayline[3])
-                {
-                    return true;
-                }
-            }
-            fclose($Myfile);
-            return false;
-        }
-
-        function CheckSimilarEmail($Email)
-        {
-            $this->FileManagerObj->setFileName("../Database/Users.txt");
-            $Myfile = fopen($this->FileManagerObj->getFileName(), "r+") or die("Unable to open file");
-            fgets($Myfile);
-            while (!feof($Myfile)) 
-            {
-                $line = fgets($Myfile);
-                $Arrayline = explode($this->FileManagerObj->getSeparator(), $line);
-
-                if($Arrayline[2] == $Email)
                 {
                     return true;
                 }
@@ -62,32 +42,24 @@
         function ListAllUsers()
         {
             $Myfile = fopen($this->FileManagerObj->getFileName(), "r+") or die("Unable to open file");
-            $Firstrow = 0;
+            fgets($Myfile);
             while (!feof($Myfile))
             {
                 $line = fgets($Myfile);
-
                 if ( empty(trim($line))) 
                 {
                     break;
                 }
-
                 $Arrayline = explode($this->FileManagerObj->getSeparator(), $line);
-
                 echo "<tr>";
-                for ($i = 0; $i < count($Arrayline) - $Firstrow; $i++)
+                for ($i = 0; $i < count($Arrayline) - 1; $i++)
                 {
                     echo "<td>" . $Arrayline[$i] . "</td>";
                 }
-
-                if($Firstrow == 1)
-                {
-                    $RoleObj = new RolesType();
-                    $RoleType = $RoleObj->GetRoleType(trim($Arrayline[count($Arrayline) - 1]));
-                    echo "<td>" . $RoleType . "</td>"."<td><input type = checkbox name = SelectedRows[] value =".$Arrayline[0]."></td>"."<td><a href = ../../Views/UserCRUD/UpdateUser.php?Id=".$Arrayline[0].">Update</a></td>";
-                }
+                $RoleObj = new RolesType();
+                $RoleType = $RoleObj->GetRoleType(trim($Arrayline[count($Arrayline) - 1]));
+                echo "<td>" . $RoleType . "</td>"."<td><input type = checkbox name = SelectedRows[] value =".$Arrayline[0]."></td>"."<td><a href = ../CRUD/UpdateEmployeeProfile.php?Id=".$Arrayline[0].">Update</a></td>";
                 echo "</tr>";
-                $Firstrow = 1;
             }
             fclose($Myfile);
         }
