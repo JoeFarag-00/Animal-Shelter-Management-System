@@ -9,7 +9,6 @@
     $Aggressiveness = $_REQUEST["Aggressiveness"];
     $ImageDirectory = $_REQUEST["PetImage"];
     $Price = $_REQUEST["Price"];
-
     $targetDir = "../../Database/Petprofileimg/";
     $targetFile = $targetDir.basename($_FILES["PetImage"]["name"]);
     
@@ -17,18 +16,11 @@
     {
         echo "The file has been uploaded <br>";
     }
-
-    include_once "../../Models/Pet.php";
     $PetObj = new Pet();
-    $PetObj->setName($Name);
-    $PetObj->setGender($Gender);
-    $PetObj->setAge($Age);
-    $PetObj->setPetType($PetType);
-    $PetObj->setBreedType($BreedType);
-    $PetObj->setSkinColor($SkinColor);
-    $PetObj->setAggressiveness($Aggressiveness);
-    $PetObj->setImageDirectory($targetFile);
-    $PetObj->setPrice($Price);
-    $PetObj->AddPet($PetObj);
-    header("location: ../../Views/PetCRUD/ListAllPets.php");
+    $Separator = $PetObj->FileManagerObj->getSeparator();
+    $TargetLine = $PetObj->FileManagerObj->GetLineById($ID);
+
+    $Arrayline = explode($Separator, $TargetLine);
+    $LineToAdd = $ID. $Separator. $Name. $Separator. $ImageDirectory.$Separator. $Gender. $Separator. $Age. $Separator. $PetType. $Separator. $BreedType. $Separator. $SkinColor.$Separator. $Aggressiveness.$Separator. $Price."\r\n";
+    $PetObj->FileManagerObj->UpdateRecord($TargetLine, $LineToAdd);
 ?>

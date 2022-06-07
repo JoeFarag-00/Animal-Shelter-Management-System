@@ -1,5 +1,4 @@
 <?php
-
     include_once "../../Models/Users.php";
     foreach($_REQUEST["SelectedRows"] as $Id)
     {

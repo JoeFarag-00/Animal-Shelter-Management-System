@@ -41,8 +41,8 @@
             }
 
             echo "</select><br><br>
-            <input type=\"file\" name=\"PetImage\" placeholder=\"Photo\" value = ". $PetObj->getImageDirectory()." required><br><br>
-            <input type=\"int\" name=\"Price\" placeholder=\"Price\" pattern=\"[0-9]+\" required><br><br>";
+            <input type=\"file\" name=\"PetImage\" placeholder=\"Photo\" required><br><br>
+            <input type=\"text\" name=\"Price\" placeholder=\"Price\" pattern=\"[0-9]+\" required Value = ".$PetObj->getPrice()." ><br><br>";
         ?>
         <br><br>
         <input type = Submit id = Buttons>

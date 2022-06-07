@@ -39,7 +39,7 @@
             ?>
         </select><br><br>
         
-        <input type="int" name="Price" placeholder="Price" pattern="[0-9]+" required><br><br>
+        <input type="text" name="Price" placeholder="Price" pattern="[0-9]+" required><br><br>
         
         <button>Send</button>
     </form>

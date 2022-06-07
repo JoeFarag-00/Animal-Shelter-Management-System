@@ -1,4 +1,3 @@
 ID~#~#Name~#~#ImageDirectory~#~#Gender~#~#Age~#~#PetType~#~#BreedType~#~#SkinColor~#~#Aggressiveness~#~#Price
 1~#~#Joy~#~#../../Database/Petprofileimg/pet1.png~#~#Male~#~#2~#~#Dog~#~#Labrador~#~#Brown~#~#Low~#~#5000
 2~#~#Jennifer~#~#../../Database/Petprofileimg/pets-jennifer.png~#~#Male~#~#2~#~#Dog~#~#Cute~#~#White~#~#Low~#~#10000
-3~#~#Jennifer~#~#../../Database/Petprofileimg/~#~#Male~#~#2~#~#Dog~#~#Cute~#~#White~#~#Low
