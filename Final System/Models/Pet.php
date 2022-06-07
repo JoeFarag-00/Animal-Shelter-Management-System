@@ -16,7 +16,7 @@
         function __construct()
         {
             $this->FileManagerObj = new FileManager();
-            $this->FileManagerObj->setFileName("../Database/Pet profile.txt");
+            $this->FileManagerObj->setFileName("../../Database/Pet profile.txt");
             $this->FileManagerObj->setSeparator("~#~#");
         }
 
@@ -104,7 +104,7 @@
         {
             $Separator = $this->FileManagerObj->getSeparator();
             $this->setID($this->FileManagerObj->getLastId() + 1);
-            $Record = $this->getImageDirectory(). $Separator. $this->getID(). $Separator.  $this->getName(). $Separator. $this->getGender(). $Separator. $this->getAge(). $Separator. $this->getPetType(). $Separator. $this->getBreedType(). $Separator. $this->getSkinColor(). $Separator. $this->getAggressiveness()."\r\n";
+            $Record =  $this->getID(). $Separator.  $this->getName(). $Separator. $this->getImageDirectory(). $Separator. $this->getGender(). $Separator. $this->getAge(). $Separator. $this->getPetType(). $Separator. $this->getBreedType(). $Separator. $this->getSkinColor(). $Separator. $this->getAggressiveness()."\r\n";
             $this->FileManagerObj->StoreRecordinFile($Record);
         }
 
@@ -125,7 +125,7 @@
                 {
                     echo "<td>" . $Arrayline[$i] . "</td>";
                 }
-                echo "<td><input type = checkbox name = SelectedRows[] value =".$Arrayline[0]."></td>"."<td><a href = ../CRUD/UpdatePetProfile.php?Id=".$Arrayline[0].">Update</a></td>"."<td><a href = ../CRUD/PetProfile.php?Id=".$Arrayline[0].">Profile</a></td>";
+                echo "<td><input type = checkbox name = SelectedRows[] value =".$Arrayline[0]."></td>"."<td><a href = ../../Views/PetCRUD/UpdatePet.php?Id=".$Arrayline[0].">Update</a></td>"."<td><a href = ../../Views/PetCRUD/PetProfile.php?Id=".$Arrayline[0].">Profile</a></td>";
                 echo "</tr>";
             }
             fclose($Myfile);
