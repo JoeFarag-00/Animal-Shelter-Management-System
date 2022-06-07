@@ -1,0 +1,14 @@
+Role Number~#~#RoleType
+0~#~#Adopter
+1~#~#Dispatcher
+2~#~#Animal_Control
+3~#~#Vet_Receptionist
+4~#~#Assistant_vet
+5~#~#Veterinarian
+6~#~#Animal_Caretaker
+7~#~#Animal_Trainer
+8~#~#Shelter_Manager
+9~#~#Accountant
+10~#~#Adoption_Manager
+11~#~#Admin
+12~#~#Admin2
