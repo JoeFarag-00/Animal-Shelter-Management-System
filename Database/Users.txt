@@ -1,6 +1,0 @@
-ID~#~#Name~#~#Email~#~#Password~#~#RoleType
-1~#~#Mina~#~#Mina.@gmail.com~#~#202cb962ac59075b964b07152d234b70~#~#11
-2~#~#Youssef~#~#Youssef@gmail.com~#~#250cf8b51c773f3f8dc8b4be867a9a02~#~#3
-3~#~#Youssef~#~#Youssefff@gmail.com~#~#9fe8593a8a330607d76796b35c64c600~#~#1
-5~#~#mina~#~#mina@sdajd~#~#81dc9bdb52d04dc20036dbd8313ed055~#~#0
-6~#~#Ahmed~#~#Ahmed@gmail.com~#~#202cb962ac59075b964b07152d234b70~#~#0
