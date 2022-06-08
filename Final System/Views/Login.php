@@ -21,7 +21,7 @@
     <div ng-app ng-init="checked = false">
 				  <form class="form-signin" action="../Controllers/Login.php" method="post" href="../Index.php" name="form">
           <label for="ID">ID</label>
-          <input class="form-styling" type="text" name="ID" placeholder="" required pattern="[0-9]"/>
+          <input class="form-styling" type="text" name="ID" placeholder="" required/>
           <label for="password">Password</label>
           <input class="form-styling" type="password" name="Password" placeholder="" required/>
           <input type="checkbox" id="checkbox"/>
@@ -34,7 +34,7 @@
 				</form>
 				  <form class="form-signup" action="../Controllers/SignUp.php" method="post" name="form">
           <label for="fullname">Full name</label>
-          <input class="form-styling" type="text" name="Name" placeholder="" required pattern="[a-zA-Z\s]+"/>
+          <input class="form-styling" type="text" name="Name" placeholder="" required pattern="[a-zA-Z]+"/>
           <label for="email">Email</label>
           <input class="form-styling" type="email" name="Email" placeholder="" required/>
           <label for="password">Password</label>

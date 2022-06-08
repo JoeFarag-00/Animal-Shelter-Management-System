@@ -9,7 +9,7 @@
         function __construct()
         {
             $this->FileManagerObj = new FileManager();
-            $this->FileManagerObj->setFileName("../../Database/Role types.txt");
+            $this->FileManagerObj->setFileName("../Database/Role types.txt");
             $this->FileManagerObj->setSeparator("~#~#");
         }
 
